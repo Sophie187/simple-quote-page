@@ -1,0 +1,180 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Position */
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 100vh;
+
+}
+
+img {
+  padding: 1px;
+  background-color: #666;
+  transition: 0.8s ease-in-out;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+  
+
+}
+
+.head, .links {
+  text-align: center;
+
+}
+
+
+.head, .about {
+  margin-bottom: 5%;
+	font-family: 'Handlee', cursive;
+
+}
+
+.content {
+  padding: 5% 5%;
+	border-top: groove;
+	text-align: center;
+
+}
+
+/* Style */
+
+body {
+  background: url('assets/plant.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 4px 5px 3px;
+	max-width: 300px;
+
+}
+
+
+img:hover {
+	box-shadow: 3px 2px 2px black;
+	transform: scale(1.2, 1.2);
+  transition: 0.8s ease-in-out;
+  
+}
+
+
+h1 {
+	display: inline;
+	position: relative;
+	font: 50px Helvetica, Sans-Serif;
+	letter-spacing: 0px;
+	color: black;
+	opacity: 0.8;
+	font-family: 'Sacramento', cursive;
+}
+
+h1::before {
+  content: "";
+  width: 20px;
+  border-bottom: 2px solid black;
+  position: absolute;
+  left: -30px;
+  top: calc(50% - 1px);
+}
+
+h1::after {
+  content: "";
+  width: 20px;
+  border-bottom: 2px solid black;
+  position: absolute;
+  right: -30px;
+  top: calc(50% - 1px);
+}
+
+h2 {
+  font-family: 'Shadows Into Light Two', cursive; 
+}
+
+span {
+   font-family: 'Shadows Into Light Two', cursive;
+   color: dimgray;
+}
+
+p {
+     font-family: 'Shadows Into Light Two', cursive;
+  
+}
+
+i:hover {
+  color: #6ab04c;
+  transform: scale(1.2, 1.2);
+  transition: 0.8s ease-in-out;
+  
+}
+
+
+.about {
+  font-family: 'Shadows Into Light Two', cursive;
+
+}
+
+
+/* Contact buttons */
+
+.contact a{
+  display: inline;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 100px;
+  text-align: center;
+  color: #6ab04c;
+  margin: 0 12px;
+  transition: .2s linear;
+  position: relative;
+}
+
+.contact a::before, .contact a::after{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: .2s linear;
+}
+
+a:hover i{
+  transform: scale(.8);
+}
+
+.contact a:hover::before{
+  border-left: 3px solid;
+  border-right: 3px solid;
+  transform: skewX(20deg);
+}
+
+.contact a:hover::after{
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  transform: skewY(-20deg);
+}
+
+.contact i {
+  width: 40px;
+  height: 40px;
+  
+  transition: .2s linear;
+}
